@@ -1,0 +1,5 @@
+Chúng ta khai báo hàm main là một hàm bất đồng bộ bằng cách sử dụng async.
+Trong hàm main, chúng ta gọi hàm fetchData() và sử dụng await để đợi cho đến khi nó hoàn thành. Trong thời gian chờ đợi, chương trình không bị chặn và có thể thực hiện các tác vụ khác.
+Hàm fetchData() là một hàm bất đồng bộ và sử dụng await để giả lập việc tải dữ liệu trong thời gian 2 giây. Sau khi dữ liệu đã được tải xong, nó trả về một chuỗi.
+Khi dữ liệu đã tải xong, chương trình tiếp tục thực hiện và in ra dòng "Dữ liệu đã được nhận: Dữ liệu tải xong".
+Kết quả là chương trình sẽ in ra "Dữ liệu đã được nhận: Dữ liệu tải xong" sau khi đã đợi trong khoảng thời gian 2 giây mà không chặn hoạt động của chương trình. Điều này giúp đảm bảo ứng dụng có thể tiếp tục hoạt động một cách mượt mà trong khi chờ đợi các tác vụ bất đồng bộ hoàn thành.
